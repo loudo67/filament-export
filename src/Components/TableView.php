@@ -139,7 +139,7 @@ class TableView extends Component
     {
         return Action::make('export')
             ->button()
-            ->label(__('filament-export::table_view.export_action_label'))
+            ->label(trans('filament-export::table_view.export_action_label'))
             ->submit()
             ->icon(config('filament-export.export_icon'));
     }
@@ -150,7 +150,7 @@ class TableView extends Component
 
         return Action::make('print')
             ->button()
-            ->label(__('filament-export::table_view.print_action_label'))
+            ->label(trans('filament-export::table_view.print_action_label'))
             ->action("\$emit('print-table-$uniqueActionId')")
             ->color('gray')
             ->icon(config('filament-export.print_icon'));
@@ -160,7 +160,7 @@ class TableView extends Component
     {
         return Action::make('cancel')
             ->button()
-            ->label(__('filament-export::export_action.cancel_action_label'))
+            ->label(trans('filament-export::export_action.cancel_action_label'))
             ->cancel()
             ->color('secondary')
             ->icon(config('filament-export.cancel_icon'));
@@ -177,7 +177,7 @@ class TableView extends Component
 
     public function getPreviewModalHeading(): string
     {
-        return __('filament-export::table_view.preview_modal_heading');
+        return trans('filament-export::table_view.preview_modal_heading');
     }
 
     public function data()

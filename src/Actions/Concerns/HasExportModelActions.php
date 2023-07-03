@@ -13,7 +13,7 @@ trait HasExportModelActions
         return ! $this->isPreviewDisabled() ? [
             Action::make('preview')
                 ->button()
-                ->label(__('filament-export::export_action.preview_action_label'))
+                ->label(trans('filament-export::export_action.preview_action_label'))
                 ->color('success')
                 ->icon(config('filament-export.preview_icon'))
                 ->action("\$emit('open-preview-modal-{$uniqueActionId}')"),
@@ -43,13 +43,13 @@ trait HasExportModelActions
                     ->icon(config('filament-export.export_icon')),
                 Action::make('print')
                     ->button()
-                    ->label(__('filament-export::export_action.print_action_label'))
+                    ->label(trans('filament-export::export_action.print_action_label'))
                     ->color('gray')
                     ->icon(config('filament-export.print_icon'))
                     ->action("\$emit('print-table-{$uniqueActionId}')"),
                 Action::make('cancel')
                     ->button()
-                    ->label(__('filament-export::export_action.cancel_action_label'))
+                    ->label(trans('filament-export::export_action.cancel_action_label'))
                     ->cancel()
                     ->color('secondary')
                     ->icon(config('filament-export.cancel_icon'))

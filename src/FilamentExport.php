@@ -169,25 +169,25 @@ class FilamentExport
 
         $action->fileName(Carbon::now()->translatedFormat($action->getTimeFormat()));
 
-        $action->fileNameFieldLabel(__('filament-export::export_action.file_name_field_label'));
+        $action->fileNameFieldLabel(trans('filament-export::export_action.file_name_field_label'));
 
-        $action->filterColumnsFieldLabel(__('filament-export::export_action.filter_columns_field_label'));
+        $action->filterColumnsFieldLabel(trans('filament-export::export_action.filter_columns_field_label'));
 
-        $action->formatFieldLabel(__('filament-export::export_action.format_field_label'));
+        $action->formatFieldLabel(trans('filament-export::export_action.format_field_label'));
 
-        $action->pageOrientationFieldLabel(__('filament-export::export_action.page_orientation_field_label'));
+        $action->pageOrientationFieldLabel(trans('filament-export::export_action.page_orientation_field_label'));
 
-        $action->additionalColumnsFieldLabel(__('filament-export::export_action.additional_columns_field.label'));
+        $action->additionalColumnsFieldLabel(trans('filament-export::export_action.additional_columns_field.label'));
 
-        $action->additionalColumnsTitleFieldLabel(__('filament-export::export_action.additional_columns_field.title_field_label'));
+        $action->additionalColumnsTitleFieldLabel(trans('filament-export::export_action.additional_columns_field.title_field_label'));
 
-        $action->additionalColumnsDefaultValueFieldLabel(__('filament-export::export_action.additional_columns_field.default_value_field_label'));
+        $action->additionalColumnsDefaultValueFieldLabel(trans('filament-export::export_action.additional_columns_field.default_value_field_label'));
 
-        $action->additionalColumnsAddButtonLabel(__('filament-export::export_action.additional_columns_field.add_button_label'));
+        $action->additionalColumnsAddButtonLabel(trans('filament-export::export_action.additional_columns_field.add_button_label'));
 
-        $action->modalButton(__('filament-export::export_action.export_action_label'));
+        $action->modalButton(trans('filament-export::export_action.export_action_label'));
 
-        $action->modalHeading(__('filament-export::export_action.modal_heading'));
+        $action->modalHeading(trans('filament-export::export_action.modal_heading'));
 
         $action->modalActions($action->getExportModalActions());
     }
